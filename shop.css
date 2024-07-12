@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#topo_do_site{
+    display: flex;
+    list-style: none;
+}
+
+
+#div_topo_do_site{
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 47px;
+    font-family: "Cairo", sans-serif;
+   
+}
+
+
+#email{
+    margin-right: 50px;
+    margin-left: 18%;
+    margin-top: 8px;
+}
+
+
+#email svg{
+    width: 16px;
+    height: 16px;
+}
+
+
+.espacinho_emcima{    
+    margin-top: 8px;
+}
+
+
+#redes_sociais{
+    margin-left: 400px;
+    margin-top: 8px;
+}
+
+
+#redes_sociais svg{
+    fill: black;
+    height: 13px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+
+#language{
+    margin-top: 8px;
+    margin-left: 50px;
+}
+
+
+#language img{
+    margin-right: 5px;
+}
+
+
+#divlenguage{
+    position:relative;
+    display: flex;
+    align-items: center;
+}
+#spanish{
+    position: absolute;
+    background-color: black;
+    padding: 0 40px 0 10px;
+    margin: 0;
+    list-style: none;
+    color: #Ffff;
+    left:50px;
+    top: 65px;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+#divlenguage:hover #spanish{
+    opacity: 1;
+    top: 40px;
+    z-index: 1;
+}
+
+
+#login{
+    margin-top: 8px;
+}
+
+
+#login svg{
+    height: 13px;
+    margin-left: 50px;
+}
+
+
+#main{
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr 1fr 1fr 1.3fr 1.3fr;
+    grid-template-rows: 80px 80px 0px;
+    margin-top: 20px;
+
+
+}
+
+#logo{ grid-column: 2;}
+
+#nav{
+    grid-column: 3/6;
+    display: flex;  
+}
+
+
+.display{
+    display: flex;
+}
+
+
+#nav li{
+    margin: 20px ;    
+}
+
+
+.fonte_nav{
+    font-family: "Cairo", sans-serif;
+    font-size: 14px;
+    list-style: none;
+}
+
+
+#nav a:hover{
+    color: #7FAD39;    
+}
+
+
+#nav a{
+    text-decoration: none;
+color: #000000;
+}
+
+
+#nav svg{
+    width: 16px;
+    height: 16px;
+}
+
+
+#escondido_pages{
+    position: relative;
+}
+
+
+#pages{
+    color: #ffffff;
+    position: absolute;    
+    background-color: rgb(0, 0, 0);
+    padding: 0 40px 0 10px;
+    margin: 0;
+    list-style: none;
+    color: #Ffff;
+    left: 10px;
+    top: 60px;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s;
+    width: 170px;
+    height: 200px;
+    font-size: 14px;
+    font-family: "Cairo", sans-serif;
+}
+
+
+#pages a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+#escondido_pages:hover #pages{
+    opacity: 1;
+    top: 40px;
+    z-index: 1;
+}
+
+
+#carrinho{
+    margin-left: 200px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+
+#carrinho svg{
+    width: 20px;
+    height: 20px;
+}
+
+
+#menu{
+    grid-column: 2;
+    grid-row: 2/4;
+    position: relative;
+}
+
+
+#menu svg{
+    width: 16px;
+    height: 16px;
+    fill:#F5F5F5;
+    margin-right: 10px;
+}
+
+
+#setinha_menu{
+    margin-left: 15px;
+}
+
+
+#menu_verde{
+    position:relative;
+}
+
+
+#menu_verde button{
+    background-color: #7FAD39;
+    width: 90%;
+    height: 50px;
+    border: none;
+    width: 262px;
+    color: #F5F5F5;
+    font-size: 16px;
+    font-family: "Cairo", sans-serif;
+}
+
+
+#opcoes_menu{
+    list-style: none;    
+}
+
+
+#opcoes_menu li{
+    margin-top: 7px;
+}
+
+
+#opcoes_menu a{
+    text-decoration: none;
+    color: #1C1C1C;
+    font-size: 18px;
+    font-family: "Cairo", sans-serif;
+    margin-left: 40px;
+}
+
+
+#parte_baixo_menu{
+    position: relative;
+}
+
+
+#opcoes_menu{
+    border: solid 0.7px #c7c4c4;
+    width: 262px;
+    margin-left: 40px;
+    height: 453px;    
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding: 0 40px 0 10px;
+    margin: 0;
+    list-style: none;
+    color: #000000;
+    left:0px;
+    top: 50px;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+
+#Check {
+    position: absolute;
+    left: 0%;
+    width: 85%;
+    height: 50px;
+    opacity: 0;
+}
+
+
+#Check:checked~#opcoes_menu{
+    opacity: 1;
+    z-index: 1;
+}
+
+
+#busca{
+    grid-column: 3/6;
+    grid-row: 2;
+    display: flex;
+}
+
+
+#alinhamento_busca{
+    display: flex;
+    border: solid 1px #c7c4c4;
+    width: 568px;
+    height: 60px;
+    list-style: none;
+}
+
+
+#alinhamento_busca li{
+    font-size: 18px;
+    font-family: "Cairo", sans-serif;
+}
+
+
+#All_Categories{
+    margin-top: 13px;
+    margin-left: 17px;
+}
+
+
+#All_Categories svg{
+    height: 12px;
+    width: 12px;
+    fill: #000000;
+    margin-left: 10px;
+}
+
+
+#alinhamento_busca button{
+    height: 59px;
+    width: 100px;
+    border: none;
+    background-color: #7FAD39;
+    color: #F5F5F5;
+    font-size: 14px;
+    font-family: "Cairo", sans-serif;
+}
+
+
+#alinhamento_busca input{
+    height: 48px;
+    width: 300px;
+    border: none;
+    margin-left: 20px;
+    margin-top: 6px;
+    color: #c7c4c4;
+    font-size: 16px;
+    font-family: "Cairo", sans-serif;
+}
+
+
+#grid_telefone{
+    display: grid;
+    grid-template-columns: 20px 280px;
+    grid-template-rows: 110px 110px 110px;
+}
+
+
+#telefone svg{
+    width: 16px;
+    height: 16px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+
+#telefone{
+    margin-left: 50px;
+    background-color: #f5f3f3;
+    width: 50px;
+    height: 50px;
+    border-radius: 1000%;
+}
+
+
+#telefone ul{
+    margin-bottom: 200px;
+    margin-left: 70px;
+}
+
+
+#numero_telefone{
+    margin-left: 90px;
+    font-size: 14px;
+    font-family: "Cairo", sans-serif;
+}
+
+
+#numero_telefone strong{
+    font-size: 18px;
+   
+}
+
+
+#faixa_tomate{
+    margin-top: 40px;
+    height: 164.19px;
+    background-image: url(breadcrumb.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#faixa_tomate h1{
+    text-align: center;
+    color: #ffffff;
+    height: 55px;
+    font-size: 46px;
+    font-family: "Cairo", sans-serif;
+}
+
+
+#faixa_tomate h2{
+    text-align: center;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Cairo", sans-serif;
+}
+
+
+#faixa_topo{
+    margin-top: 10px;
+}
